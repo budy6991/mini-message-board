@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get("/", function (req, res, next) {
-  res.send("This is where you are supposed to input the message");
+  res.render("form");
+});
+
+router.post("/", function (req, res, next) {
+  console.log(req);
 });
 
 module.exports = router;

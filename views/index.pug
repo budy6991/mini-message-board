@@ -5,13 +5,13 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body 
     h1  #{title} 
-    p this is a paragraph 
-      a(href= 'http://www.theodinproject.com') this is the link text
-    
-    div
-      form(action='/', method='POST')
-        label(for='ourid', ) Name 
-        input(name= 'ourname', type='password', id='ourid', placeholder='Input something')
-        input(type='submit', value='Our value')
+    a(href='/new')
+      input(type='submit', value='Send a Message!')
+    h1 Messages
+    each msg in messages 
+      div(class='message-card')
+        p Text: #{msg.text} 
+        p User: #{msg.user} 
+        p Added: #{msg.added}
 
       

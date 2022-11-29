@@ -1,0 +1,12 @@
+html 
+  head
+    title  Mini message board
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body 
+    h1 Input a message
+    
+    form(method='POST' action='/new' class='message-form')
+        textarea(name="messageText", cols="30", rows="10") 
+        input(type='text', name='user', placeholder='user')
+        input(type="submit", value='submit')
+    
