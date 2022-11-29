@@ -1,6 +1,6 @@
 ## Mini Message Board
 
-Simple NodeJs application that runs on server side, using Express(as MVC framework) and Pug(as the templating language for the views).
+Simple NodeJs application that runs on server side, using Express (as MVC framework) and Pug(as the templating language for the views).
 
 <img src='./mini-message-board.jpg'>
 
